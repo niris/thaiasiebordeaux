@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+	<ul class="nav navbar-nav navbar-left">
+		{% assign sorted_pages = site.pages | sort:"ordre" %}
+		{% for p in sorted_pages %}{% if p.ordre %}
+		<li><a href="#{{p.url | replace_first: '/', '' | replace: '.html', ''}}"><span class="glyphicon glyphicon-{{p.icone}}"></span> <span class="navbar-item">{{p.titre}}</span></a></li>
+		{% endif %}{% endfor %}
+	</ul>
+	<form class="navbar-form navbar-right" style="padding:0 6px;border:0;">
+		<a class="btn btn-success" href="tel:{{site.phone}}"><span class="glyphicon glyphicon-earphone"></span> <span class="navbar-it_em">Commander</span></a>
+	</form>
+	</div>
+</nav>

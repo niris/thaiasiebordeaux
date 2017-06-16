@@ -1,0 +1,20 @@
+---
+layout: default
+ordre: 1
+titre: Bienvenu chez P'tuk
+image: http://www.kennyspanasian.com/images/home_image.jpg
+icone: home
+---
+
+<div class="row"><div class="col"><div class="jumbotron">
+<h2>Voici le site du resto de P'tuk</h2>
+<p>Restuk vous acceuil dans son ambiance chic thai pour vous faire decouvrir les meilleurs plat traditionel Thailandais et asiatiques</p>
+</div></div></div>
+
+<div class="row">
+{% for slogan in site.data.info.slogan %}
+	<div class="col-xs-6 col-lg-4 slogan">
+		<h3><span class="glyphicon glyphicon-{{slogan[0]}}"></span> {{ slogan[1] }}</h3>
+	</div>
+{% endfor %}
+</div>

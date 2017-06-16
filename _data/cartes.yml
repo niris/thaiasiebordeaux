@@ -1,0 +1,120 @@
+boissons:
+ Gazeuses:
+  prix: 1.43
+  photo: http://img.radio-canada.ca/2013/10/11/635x357/131011_5b358_tete_boisson_gazeuse_sn635.jpg
+ Badoie:
+  prix: 1.43
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Logo_Badoit.jpg/280px-Logo_Badoit.jpg
+ Jus de fruit:
+  prix: 1.43
+  photo: http://extracteur-de-jus.com/wp-content/uploads/2009/05/fruits1.jpg
+ Eau:
+  prix: 1.43
+  photo: http://www.lagazettedescommunes.com/wp-content/uploads/une-eau.jpg
+
+glaces:
+ 1 boules:
+  photo: http://www.entreprises-tunisie.com/img/agences/3/produits/glace%201b.jpg
+  prix: 2
+ 2 boules:
+  photo: http://www.entreprises-tunisie.com/img/agences/3/produits/glace%202b.jpg
+  prix: 2
+ Bannane Flambées:
+  photo: http://images.cuisineaz.com/240x192/96317940-cb11-4008-8b9d-54dad3b32eaf.JPG
+  prix: 2
+ Dame blanche:
+  photo: http://hostellerielacroixdeshetres.com/wp-content/uploads/2014/12/202370-Dame-blanche-L.jpg
+  prix: 2
+ supl. Nutella:
+  photo: http://www.agirpourlaplanete.com/images/articles/nutella400_250.jpg
+  prix: 0.5
+
+salade:
+ nicoise:
+  photo: http://www.subitopizza.fr/wp-content/uploads/2013/11/salade-nicoise-au-thon.jpg
+  prix: 1.43
+ thon:
+  photo: http://restonostalgie.com/wp-content/uploads/2015/09/salade-de-thon.jpg
+  prix: 1.43
+
+sushi:
+ Saumon (x6):
+  photo : http://www.dsushi.fr/savefiles/articles/art_image1_20121201232218.jpg
+  prix: 1.43
+ Thon (x6):
+  photo: http://www.planetsushi.fr/commandes/77-1004-produit_liste/SUSHI-THON.jpg
+  prix: 1.43
+ Crevette (x6):
+  photo: http://www.wasabartsushi.com/site/images/normal/prod4ea3472166013.jpg
+  prix: 1.43
+ Seiche (x6):
+  prix: 1.43
+  photo: http://img.fac.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Fcuisine.2Frecettes.2Fsushi-aux-calamars-et-sushi-aux-saint-jacques.2F8506138-1-fre-FR.2Fsushi_aux_calamars_et_sushi_aux_saint_jacques.2Ejpg/489x367/crop-from/center/sushi-aux-calamars-et-sushi-aux-saint-jacques.jpg
+ Complet (x6):
+  prix: 1.43
+  photo: http://www.allo-sushi-boulogne.fr/uploads/64/externe/originals/sushis.jpg
+
+brochettes:
+ boeuf (x2):
+  photo: http://www.planetsushi.fr/commandes/90-795-produit_liste/BOEUF-FROMAGE.jpg
+  prix: 1.43
+ poulet (x2):
+  photo: http://www.planetsushi.fr/commandes/94-798-produit_liste/YAKITORI-POULET.jpg
+  prix: 1.43
+ saumon (x2):
+  photo: http://www.planetsushi.fr/commandes/96-800-produit_liste/YAKITORI-SAUMON.jpg
+  prix: 1.43
+ boeufromage (x2):
+  photo: http://www.planetsushi.fr/commandes/656-1263-produit_liste/yakitori-boeuf-fromage-cumin.jpg
+  prix: 1.43
+
+makis:
+ californian:
+  photo: http://www.planetsushi.fr/commandes/38-897-produit_liste/CALIFORNIA-SAUMON.jpg
+  prix: 1.43
+ Saumon:
+  photo: http://www.planetsushi.fr/commandes/54-911-produit_liste/MAKI-SAUMON.jpg
+  prix: 1.43
+ Crevette:
+  photo: http://www.planetsushi.fr/commandes/50-913-produit_liste/MAKI-AVOCAT-CREVETTE.jpg
+  prix: 1.43
+ Thon:
+  photo: http://www.planetsushi.fr/commandes/60-916-produit_liste/MAKI-THON.jpg
+  prix: 1.43
+
+desserts:
+ Salade de fruits:
+  photo: http://www.planetsushi.fr/commandes/160-837-produit_liste/SALADE-DE-FRUITS.jpg
+  prix: 1
+ brownie:
+  photo: http://www.planetsushi.fr/commandes/157-839-produit_liste/MI-CUIT-CHOCOLAT.jpg
+  prix: 1
+ perles banane:
+  photo: http://www.planetsushi.fr/commandes/653-1241-produit_liste/perles-du-japon-banane.jpg
+
+nems:
+ poulet:
+  prix: 1
+  photo: http://2.bp.blogspot.com/-tA2CeXwF1vo/UIRfOrL4CXI/AAAAAAAAS2Q/jY5Ijze5464/s1600/IMG_3688.JPG
+ porc:
+  prix: 1
+  photo: http://2.bp.blogspot.com/-tA2CeXwF1vo/UIRfOrL4CXI/AAAAAAAAS2Q/jY5Ijze5464/s1600/IMG_3688.JPG
+ crevette:
+  prix: 1
+  photo: http://2.bp.blogspot.com/-tA2CeXwF1vo/UIRfOrL4CXI/AAAAAAAAS2Q/jY5Ijze5464/s1600/IMG_3688.JPG
+ salade:
+  prix: 1
+  photo: http://2.bp.blogspot.com/-tA2CeXwF1vo/UIRfOrL4CXI/AAAAAAAAS2Q/jY5Ijze5464/s1600/IMG_3688.JPG
+
+riz:
+ gluant:
+  photo: http://azizen.com/wp-content/uploads/2012/03/khao-niao-riz-gluant.jpg
+  prix: 1
+ cantonais:
+  photo: http://www.recettes-sud-ouest.com/uploads/recettes/7af42fdb26a54b7db6cbdaf97f98e17c__riz-cantonais.jpg
+  prix: 1
+
+soupes:
+ poulet:
+  photo: http://www.planetsushi.fr/commandes/579-1128-plateau_liste/ramen-crevettes.jpg
+  prix: 2
