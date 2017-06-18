@@ -4,7 +4,9 @@ layout: default
 
 {% assign sorted_pages = site.pages | sort:"ordre" %}
 {% for p in sorted_pages %}{% if p.ordre %}
-<h1 class="paralax" style="background-image:url({{p.image}})"><a name="{{p.url | replace_first: '/', '' | replace: '.html', ''}}"></a>{{ p.titre }}</h1>
+<h1 class="paralax" style="background-image:url({{p.image}})"><a name="{{p.url | replace_first: '/', '' | replace: '.html', ''}}"></a>{{ p.titre }}
+<span>{{ p.detail }}</span>
+</h1>
 <div class="container">{{ p.content | markdownify }}</div>
 {% endif %}{% endfor %}
 
