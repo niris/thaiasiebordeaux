@@ -1,7 +1,6 @@
 slogan:
- map-marker: Situé au <a href="http://maps.google.com?q=23 Rue du taur, Toulouse, France">23 Rue du Taur</a>
- phone-alt: Commandez au <a href="tel:012345678">012345678</a>
- time: Lun~Sam de 11h à 23h
+ map-marker: Situé au <a href="http://maps.google.com?q=23 Rue du taur, Toulouse, France">1 Place René Maran - 33300 Bordeaux</a>
+ phone-alt: Commandez au <a href="tel:0967741755">09 67 74 17 55</a>
+ time: Lun~Ven de 10h à 14h et 17h à 20h
  send: Livraison sur bordeaux
- cutlery: Menu Express Midi
- signal: Wi-Fi Gratuit
+ cutlery: Formule Midi 8.5€
