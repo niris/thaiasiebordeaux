@@ -4,6 +4,7 @@ Formule Midi:
 
 Plat du jours:
  prix: 6.50
+ list:
  - Poulet Caramel:
  - Poulet Basilic:
  - Poulet Saté:
@@ -25,6 +26,7 @@ Plat du jours:
 
 Accompagnement:
  prix: 2.50
+ list:
  - Riz Parfumé
  - Riz Cantonais
  - Riz Gluant
@@ -34,7 +36,8 @@ Accompagnement:
 
 Pad Thai:
  prix: 8.50
- info: Vermicelles de riz Thai sautés: tofus, ciboulette, pousses de soja,  cacahuetes pilées
+ info: "Vermicelles de riz Thai sautés: tofus, ciboulette, pousses de soja,  cacahuètes pilées"
+ list:
  - Pad Thai Boeuf
  - Pad Thai Poulet
  - Pad Thai Crevettes
@@ -43,6 +46,7 @@ Pad Thai:
 Kraow Pad Thai:
  prix: 8.50
  info: Riz sauté au soja, oeuf, tomate, ciboulette, concombre et citron.
+ list:
  - Kraow Pad Thai Boeuf
  - Kraow Pad Thai Poulet
  - Kraow Pad Thai Crevettes
@@ -51,15 +55,18 @@ Kraow Pad Thai:
 Soupe Pho:
  prix: 8.50
  info: Bouillon + Vermicelles de riz Thai (Boeuf cru, Boeuf)
+ list:
  - 
 
 Potage:
  prix: 5.00
+ list:
  - Asperge
  - Pot au feu
  - Tom Yam Crevette
  
-Assortiments
+Assortiments:
+ list:
  - Rouleau de Printemps
  - Nem Porc
  - Nem Crabe
@@ -87,12 +94,14 @@ Assortiments
  - Yakitori
 
 Desserts:
+ list:
  - Nougat
  - Gingembre
  - 3 Boules coco/soja/choco
 
 Boisson:
  prix: 1.80
+ list:
  - Coca
  - Fanta
  - Lipton
@@ -102,4 +111,5 @@ Boisson:
 
 Biere:
  prix: 3.00
+ list:
  - Tsinga
