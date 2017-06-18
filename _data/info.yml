@@ -1,6 +1,6 @@
 slogan:
- map-marker: Situé au <a href="http://maps.google.com?q=23 Rue du taur, Toulouse, France">1 Place René Maran - 33300 Bordeaux</a>
- phone-alt: Commandez au <a href="tel:0967741755">09 67 74 17 55</a>
- time: Lun~Ven de 10h à 14h et 17h à 20h
+ map-marker: <a href="http://maps.google.com?q=1 Place René Maran Bordeaux">1 Place René Maran - 33300 Bordeaux</a>
+ phone-alt: Commandez au <a href="tel:0967741755">0967741755</a>
+ time: Lun~Ven 10h~14h et 17h~20h
  send: Livraison sur bordeaux
  cutlery: Formule Midi 8.5€
