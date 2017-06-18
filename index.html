@@ -1,12 +1,70 @@
 ---
 layout: default
 ---
+<!-- https://imgur.com/a/4moOn -->
+<header>{{site.title}}<detail>{{site.detail}}</detail></header>
 
-{% assign sorted_pages = site.pages | sort:"ordre" %}
-{% for p in sorted_pages %}{% if p.ordre %}
-<h1 class="paralax" style="background-image:url({{p.image}})"><a name="{{p.url | replace_first: '/', '' | replace: '.html', ''}}"></a>{{ p.titre }}
-<span>{{ p.detail }}</span>
-</h1>
-<div class="container">{{ p.content | markdownify }}</div>
-{% endif %}{% endfor %}
+<nav>
+	<a target="_blank" href="http://maps.google.com?q=1 Place René Maran Bordeaux">&#128681; 1 Place René Maran</a>
+	<a href="tel:{{site.phone}}">&#9990;&nbsp;0967741755</a>
+	<a>&#9202;&nbsp;Lun-Ven 10-14h, 17-20h</a>
+	<a target="_blank" href="https://www.facebook.com/profile.php?id=100015644389309" class="fb">f</a>
+</nav>
+
+
+{{site.info | markdownify}}
+
+{% for carte in site.data.cartes %}
+<section>
+	<header>
+		{{ carte[0] }}
+		{% if carte[1].prix != nil %}<var>{{ carte[1].prix }}</var>{% endif %}
+		{% if carte[1].info != nil %}<detail>{{ carte[1].info }}</detail>{% endif %}
+	</header>
+	
+	{% for plat in carte[1].list %}
+	<article title="{{plat.titre}} ({{carte[1].prix}}{{plat.prix}})" style="background-image:url('photo/{{carte[0]}}-{{plat.titre}}.jpg')" onclick="shop(this.title, true)">
+		<header>
+			<span>{{ plat.titre }}</span>
+			{% if plat.info != nil %}<detail>{{ plat.info }}</detail>{% endif %}
+			{% if plat.prix != nil %}<var>{{ plat.prix }}</var>{% endif %}
+		</header>
+	</article>
+	{% endfor %}
+</section>
+{% endfor %}
+
+
+<a href="#basket" onanimationend="this.classList.value=''">0</a>
+
+<dialog id="basket" tabindex="-1">
+	<header>Liste de commande : <var>0.00</var>€<a href="#close">&times;</a></header>
+	<ul></ul>
+	<footer>
+		A <select name="mode" onchange="this.parentNode.className=this.value"><option>livrer<option>emporter</select>
+		dans <select name="time"><option>10 min<option>20 min<option>30 min<option>45 min<option>1H</select>
+		<span class="livrer">à <input size="13" placeholder="adresse"></span>
+		<a onclick="location.href='mailto:{{site.email}}?subject=Commande&body='+[].slice.call(document.querySelectorAll('#basket li')).map(li=>li.textContent).join('%0A')">Merci !</a>
+	</footer>
+</dialog>
+
+<script>
+function shop(name, isAdding){
+	var list = JSON.parse(localStorage['list']||'[]');
+	if(name !== undefined){
+		document.querySelector('a[href="#basket"]').classList.add('bounce');
+		if(isAdding){
+			list.push(name);
+		}else{
+			list.splice(name, 1)
+		}
+	}
+	localStorage['list'] = JSON.stringify(list);
+	document.querySelector('#basket ul').innerHTML=list.map((e,i)=>'<li onclick="shop('+i+')">'+e+'</li>').join('')
+	document.querySelector('#basket var').innerHTML=list.map(v=>+v.match(/([0-9.]+)€/)[1]).reduce((v,g)=>v+g,0)
+	document.querySelector('[href="#basket"]').innerHTML=list.length;
+}
+shop()
+</script>
+
 
